@@ -1,0 +1,30 @@
+
+> eventchain-frontend@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\leotr\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\leotr\eventchain-frontend\package-lock.json
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1421.4ms
+  Running TypeScript ...
+Failed to compile.
+
+.next/types/validator.ts:81:31
+Type error: Type 'typeof import("C:/Users/leotr/eventchain-frontend/app/api/invest/route")' has no properties in common with type 'RouteHandlerConfig<"/api/invest">'.
+
+[0m [90m 79 |[39m   type __IsExpected[33m<[39m[33mSpecific[39m [36mextends[39m [33mRouteHandlerConfig[39m[33m<[39m[32m"/api/invest"[39m[33m>>[39m [33m=[39m [33mSpecific[39m
+ [90m 80 |[39m   [36mconst[39m handler [33m=[39m {} [36mas[39m [36mtypeof[39m [36mimport[39m([32m"../../app/api/invest/route.js"[39m)
+[31m[1m>[22m[39m[90m 81 |[39m   type __Check [33m=[39m __IsExpected[33m<[39m[36mtypeof[39m handler[33m>[39m
+ [90m    |[39m                               [31m[1m^[22m[39m
+ [90m 82 |[39m   [90m// @ts-ignore[39m
+ [90m 83 |[39m   type __Unused [33m=[39m __Check
+ [90m 84 |[39m }[0m
+Next.js build worker exited with code: 1 and signal: null
